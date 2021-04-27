@@ -5,11 +5,14 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build:wc": "yarn build --inline-vue --target wc --name tf-pay './src/App.vue'"
   },
   "dependencies": {
+    "@chenfengyuan/vue-qrcode": "^1.0.2",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "web-component-wrapper": "^0.0.241"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

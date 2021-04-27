@@ -1,8 +1,8 @@
-import Vue from 'vue'
-import App from './App.vue'
 
-Vue.config.productionTip = false
+import Vue from "vue";
+import wrap from "@vue/web-component-wrapper";
+import App from "./App.vue";
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+const wrappedElement = wrap(Vue, App);
+
+window.customElements.define("tf-pay", wrappedElement);
